@@ -9,7 +9,7 @@ namespace DataAcces.Abstracts
 {
     public interface ICategoryDal
     {
-        void Add();
+        void Add(Category category);
         void Update();
         void Delete();
         void GetAll();

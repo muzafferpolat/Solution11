@@ -1,4 +1,5 @@
 ﻿using DataAcces.Abstracts;
+using Entities.Concretes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,17 @@ using System.Threading.Tasks;
 
 namespace DataAcces.Concretes
 {
+
     public class CoursDal : ICourseDal
     {
-        public void Add()
+        MQL.MBASE mQL = null;
+        public CoursDal()
+        {
+            mQL = new MQL.MBASE();
+        }
+
+
+        public void Add(Category category)
         {
             Console.WriteLine("Added");
         }

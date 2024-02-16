@@ -8,7 +8,7 @@ namespace DataAcces.Abstracts
 {
     public interface ICourseDal
     {
-        void Add();
+        void Add(Category category);
         void Update();
         void Delete();
         void GetAll();

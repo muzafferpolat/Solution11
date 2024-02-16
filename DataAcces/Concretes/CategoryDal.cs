@@ -10,9 +10,15 @@ namespace DataAcces.Concretes
 {
     public class CategoryDal : ICategoryDal
     {
+        Category category;
+        MQL.MBASE _mBase;
+        public CategoryDal()
+        {
+            category = new Category();
+            _mBase = new MQL.MBASE();
+        }
         
-        
-        public void Add()
+        public void Add(Category category)
         {
             Console.WriteLine("Added");
         }

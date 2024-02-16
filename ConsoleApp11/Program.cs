@@ -15,11 +15,7 @@ namespace ConsoleApp11
             Category category = new Category();
             category.Id = 1;
             CategoryManager categoryManager = new CategoryManager();
-            ProjectManager projectManager = new ProjectManager();
-            projectManager.Add(categoryManager);
-
-
-
+            categoryManager.Add(category);
             Console.ReadLine();
         }
     }
